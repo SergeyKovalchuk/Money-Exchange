@@ -15,15 +15,16 @@ Coins that are not used should not be included in the object.
 If the argument passed in is 0, then the method should return an empty object.
 If the currency can't be exchanged using 50¢, 25¢, 10¢, 5¢ and 2¢ coins please return next object:
 ```javascript
-   { error: "Sorry! We don't have coins for exchange"}
+   {error: "Sorry! We don't have coins for exchange"}
 ```
 
 ### For example:
 ```javascript
   makeExchange(0)  --> {}
-  makeExchange(1)  --> {"P":1}
-  makeExchange(43) --> {"Q":1,"D":1,"N":1,"P":3}
-  makeExchange(91) --> {"H":1,"Q":1,"D":1,"N":1,"P":1}
+  makeExchange(1)  --> {error: "Sorry! We don't have coins for exchange"}
+  makeExchange(2)  --> {"P":1}
+  makeExchange(44) --> {"Q":1,"D":1,"N":1,"P":2}
+  makeExchange(92) --> {"H":1,"Q":1,"D":1,"N":1,"P":1}
 ```
 ![Money Exchange](./images/money-exchange.jpg)
 
