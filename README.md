@@ -28,5 +28,13 @@ If the currency that you would like to exchange more than 10000 please return ne
 ```
 ![Money Exchange](./images/money-exchange.jpg)
 
+## Prepare and test
+
+- Install [Node.js](https://nodejs.org/en/)
+- Clone this repository: `git clone https://github.com/SergeyKovalchuk/Money-Exchange.git`
+- Run `npm install` in command line
+- Run `npm test` in command line
+- You will see the number of passing and failing tests
+
 #### Write your code in `src/index.js`
 #### Run test locally `npm test`
